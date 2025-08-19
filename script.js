@@ -1,7 +1,15 @@
 
-for (let i=0; i<16; i++){
-    const box = document.createElement('div');
+
+for (i=0;i<256;i++){
+    let box = document.createElement('div');
     box.classList.add('boxes');
-    box.textContent = 'hello';
-    document.querySelector('body').appendChild(box);
+    box.textContent = `${i}`
+    box.id = `box${i}`;
+    document.querySelector('#container').appendChild(box);
 }
+
+let boxes = document.querySelectorAll('.boxes');
+boxes.forEach((box)=>{
+
+    }
+)
